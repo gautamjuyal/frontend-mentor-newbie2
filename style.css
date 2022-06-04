@@ -57,7 +57,7 @@ main{
     cursor:pointer;
 }
 
-.img-box:hover::after{
+.img-box:active::after{
     opacity:1;
 }
 
@@ -80,7 +80,7 @@ main{
     padding:15px 0px 15px 0;
 }
 
-.text-area h1:hover{
+.text-area h1:active{
     color:hsl(178, 100%, 50%);
 }
 
@@ -144,6 +144,6 @@ main{
     color:hsl(0, 0%, 100%);
 }
 
-.author span:hover{
+.author span:active{
     color:hsl(178, 100%, 50%);
 }
