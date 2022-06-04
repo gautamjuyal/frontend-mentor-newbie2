@@ -102,13 +102,13 @@ main{
     color: hsl(178, 100%, 50%);
 }
 
-.info span{
+.info div{
     gap:6px;
     display:flex;
     align-items:center;
 }
 
-.info span:last-child{
+.info div:last-child{
     color:hsl(215, 51%, 70%);
     
 }
