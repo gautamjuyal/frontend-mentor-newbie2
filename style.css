@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    /* border:2px solid black; */
+    margin:0;
+    padding:0;
+    font-family: 'Outfit', sans-serif;
+}
+
+main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:hsl(217, 54%, 11%);
+    width:100%;
+    height:100vh;
+}
+
+.nft-box{
+    display:flex;
+    box-sizing:border-box;
+    width:350px;
+    height:580px;
+    border-radius:10px;
+    flex-direction: column;
+    align-items: center;
+    background-color:hsl(216, 50%, 16%);
+    padding:23px;
+    /* box-shadow: 
+        -10px 20px 2px  hsl(215, 32%, 27%),
+        10px 20px 2px hsl(215, 32%, 27%); */
+}
+
+.img-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-sizing:border-box;
+    background-size:cover;
+    background-image:url("image-equilibrium.jpg");
+    border-radius:10px;
+    width:100%;
+    position:relative;
+}
+
+.img-box::after{
+    content:'';
+    width:100%;
+    height: 100%;
+    background:hsl(178, 100%, 50%,0.5);
+    background-image: url("icon-view.svg");
+    background-position: center;
+    background-repeat:no-repeat;
+    position:absolute;
+    border-radius: 10px;
+    opacity:0;
+    cursor:pointer;
+}
+
+.img-box:hover::after{
+    opacity:1;
+}
+
+.img-box img{
+    display:flex;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+
+
+.text-area{
+    margin:10px auto 0 auto;
+    padding:20px auto;
+}
+
+.text-area h1{
+    color:white;
+    font-size:1.4rem;
+    padding:15px 0px 15px 0;
+}
+
+.text-area h1:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+.text-area p{
+    color:hsl(215, 51%, 70%);
+    font-size:1.1rem;
+}
+
+
+.info{
+    display:flex;
+    justify-content: space-between;
+    margin:20px auto 20px auto;
+    width:100%;
+}
+
+.info h2{
+    font-size:1rem;
+    color: hsl(178, 100%, 50%);
+}
+
+.info span{
+    gap:6px;
+    display:flex;
+    align-items:center;
+}
+
+.info span:last-child{
+    color:hsl(215, 51%, 70%);
+    
+}
+
+
+.info img{
+    display:flex;
+    width:0.7rem;
+    
+}
+
+.author{
+    display:flex;
+    width:100%;
+    color:hsl(215, 51%, 70%);
+    box-sizing:border-box;
+    height:50px;
+    align-items:center;
+    gap:10px;
+    justify-content:left;
+    padding-top:10px;
+    border-top: 2px solid hsl(215, 32%, 27%);
+    margin:0;
+}
+
+.author img{
+    height:2rem;
+    border: 1px solid white;
+    border-radius:50%;
+}
+
+.author span{
+    color:hsl(0, 0%, 100%);
+}
+
+.author span:hover{
+    color:hsl(178, 100%, 50%);
+}
